@@ -13,7 +13,7 @@ const WebsiteLogo = (props) =>{
   return (
     <Box {...props}>
       <Text fontSize="lg" fontWeight="bold">
-        Enterprise
+        TRADEBULLS
       </Text>
     </Box>
   );
@@ -131,7 +131,7 @@ const FlexContainer = ({ children, ...props }) => {
       w="100%"
       mb={8}
       p={8}
-      bg={["primary.500", "primary.500", "transparent", "transparent"]}
+      bg={["primary.300", "primary.300", "transparent", "transparent"]}
       color={["white", "white", "primary.700", "primary.700"]}
       {...props}
     >
@@ -148,7 +148,7 @@ const NavigationBar = (props) => {
   return (
     <FlexContainer {...props}>
       <WebsiteLogo
-        w="100px"
+        w="170px"
         color={["white", "white", "primary.500", "primary.500"]}
       />
       <MenuToggle toggleEvent={toggleEvent} isMobileView={isMobileView} />
