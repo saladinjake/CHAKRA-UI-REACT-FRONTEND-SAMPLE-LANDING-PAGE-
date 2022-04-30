@@ -37,10 +37,17 @@ export default function Footer() {
       <Container as={Stack} maxW={'6xl'} py={10}>
         <SimpleGrid columns={{ base: 1, sm: 2, md: 4 }} spacing={8}>
           <Stack align={'flex-start'}>
-            <ListHeader>Product</ListHeader>
+            <ListHeader>Site Maps</ListHeader>
             <Link href={'#'}>Overview</Link>
+
+            <Link href={'#'}>About</Link>
+<Link href={'#'}>Advertise</Link>
+<Link href={'#'}>Careers</Link>
+<Link href={'#'}>Blog</Link>
+
+
             <Stack direction={'row'} align={'center'} spacing={2}>
-              <Link href={'#'}>Features</Link>
+              <Link href={'#'}>Ico's</Link>
               <Tag
                 size={'sm'}
                 bg={useColorModeValue('green.300', 'green.800')}
@@ -50,25 +57,34 @@ export default function Footer() {
               </Tag>
             </Stack>
             <Link href={'#'}>Tutorials</Link>
-            <Link href={'#'}>Pricing</Link>
+            <Link href={'#'}>Investment Schemes</Link>
             <Link href={'#'}>Releases</Link>
           </Stack>
           <Stack align={'flex-start'}>
-            <ListHeader>Company</ListHeader>
-            <Link href={'#'}>About Us</Link>
-            <Link href={'#'}>Press</Link>
-            <Link href={'#'}>Careers</Link>
-            <Link href={'#'}>Contact Us</Link>
-            <Link href={'#'}>Partners</Link>
+            <ListHeader>KINGSCOIN Whitepaper</ListHeader>
+            <Link href={'#'}>Get Started</Link>
+            <Link href={'#'}>Authors Archive</Link>
+            <Link href={'#'}>Developers</Link>
+            <Link href={'#'}>Buy Bitcoin</Link>
+            <Link href={'#'}>Trade Locally</Link>
+            <Link href={'#'}>Contact</Link>
+<Link href={'#'}>Partners</Link>
+<Link href={'#'}>Support</Link>
+<Link href={'#'}>Legal</Link>
+
+
+
           </Stack>
           <Stack align={'flex-start'}>
             <ListHeader>Legal</ListHeader>
             <Link href={'#'}>Cookies Policy</Link>
             <Link href={'#'}>Privacy Policy</Link>
             <Link href={'#'}>Terms of Service</Link>
-            <Link href={'#'}>Law Enforcement</Link>
-            <Link href={'#'}>Status</Link>
+            <Link href={'#'}> Wallet</Link>
+            <Link href={'#'}>KingsCoin Cash Register</Link>
           </Stack>
+
+
           <Stack align={'flex-start'}>
             <ListHeader>Follow Us</ListHeader>
             <Link href={'#'}>Facebook</Link>

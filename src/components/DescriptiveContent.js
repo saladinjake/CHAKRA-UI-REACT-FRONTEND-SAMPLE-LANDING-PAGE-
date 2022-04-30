@@ -37,8 +37,14 @@ export default function BodyContent() {
         <GridItem colSpan={1}>
           <VStack alignItems="flex-start" spacing="20px">
             <chakra.h2 fontSize="3xl" fontWeight="700">
-              Medium length title
+              Learn To Trade And Earn 
             </chakra.h2>
+
+             <chakra.p>
+              Get a full suite of advanced trading tools at Bitcoin.com Exchange, 
+              plus ways to generate passive income with your crypto
+            </chakra.p>
+
             <Button colorScheme="green" size="md">
               Call To Action
             </Button>
@@ -47,9 +53,7 @@ export default function BodyContent() {
         <GridItem>
           <Flex>
             <chakra.p>
-              Provide your customers a story they would enjoy keeping in mind
-              the objectives of your website. Pay special attention to the tone
-              of voice.
+              Get up to speed on Cryptocoins, digital assets and more with profound articles, guides, and step-by-step tutorials
             </chakra.p>
           </Flex>
         </GridItem>

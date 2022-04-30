@@ -108,29 +108,30 @@ export default function ServiceSection() {
           </Heading>
 
 
-          <Text color={'gray.500'}>
-            Snippy is a rich coding snippets app that lets you create your own
-            code snippets, categorize them, and even sync them in the cloud so
-            you can use them anywhere. All that is free!
-          </Text>
+          {/*<Text color={'gray.500'}>
+            </Text>**/}
 
           <List spacing={3}>
   <ListItem>
     <ListIcon as={MdCheckCircle} color='green.500' />
-    Lorem ipsum dolor sit amet, consectetur adipisicing elit
+    Buy, sell, and trade on the go
+Manage your holdings from your mobile device
   </ListItem>
   <ListItem>
     <ListIcon as={MdCheckCircle} color='green.500' />
-    Assumenda, quia temporibus eveniet a libero incidunt suscipit
+   Take control of your wealth
+Rest assured you (and only you) have access to your funds
   </ListItem>
   <ListItem>
     <ListIcon as={MdCheckCircle} color='green.500' />
-    Quidem, ipsam illum quis sed voluptatum quae eum fugit earum
+  Move money freely
+Send and receive cryptocurrencies anytime, anywhere - no questions asked
   </ListItem>
   {/* You can also use custom icons from react-icons */}
   <ListItem>
     <ListIcon as={MdSettings} color='green.500' />
-    Quidem, ipsam illum quis sed voluptatum quae eum fugit earum
+   Earn interest on your money
+Simply hold flexUSD and get 10-20% APY, compounding daily
   </ListItem>
 </List>
           <Stack

@@ -9,6 +9,7 @@
     "@emotion/react": "11.1.2",
     "@emotion/styled": "11.0.0",
     "framer-motion": "2.9.5",
+    "nprogress": "^0.2.0",
     "prop-types": "^15.8.1",
     "react": "16.12.0",
     "react-dom": "16.12.0",
