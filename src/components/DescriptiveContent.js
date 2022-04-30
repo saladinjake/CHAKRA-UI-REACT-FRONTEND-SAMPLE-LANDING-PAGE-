@@ -67,16 +67,16 @@ export default function BodyContent() {
         }}
         gap={{ base: '8', sm: '12', md: '16' }}>
         <Feature
-          heading={'First Feature'}
-          text={'Short text describing one of you features/service'}
+          heading={'How do i get kings coin'}
+          text={'To receive bitcoin, simply provide the sender with your address. You just need to make sure you are providing the right one...'}
         />
         <Feature
-          heading={'Second Feature'}
-          text={'Short text describing one of you features/service'}
+          heading={'How to i load Kings coin for trading'}
+          text={'Creating a Kingscoin wallet is as easy as installing software on your mobile device or computer'}
         />
         <Feature
-          heading={'Third Feature'}
-          text={'Short text describing one of you features/service'}
+          heading={'How safe is Kings Trade'}
+          text={'Kingscoin is based on the ideas laid out in a 2008 whitepaper titled Kingscoin: A Peer-to-Peer Electronic Cash System'}
         />
         <Feature
           heading={'Fourth Feature'}

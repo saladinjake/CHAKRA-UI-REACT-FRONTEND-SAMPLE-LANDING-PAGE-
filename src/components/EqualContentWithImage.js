@@ -1,3 +1,4 @@
+import React,{ ReactElement } from 'react';
 import {
   Container,
   SimpleGrid,
@@ -15,7 +16,7 @@ import {
   IoLogoBitcoin,
   IoSearchSharp,
 } from 'react-icons/io5';
-import { ReactElement } from 'react';
+
 
 
 

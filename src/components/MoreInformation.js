@@ -1,14 +1,9 @@
-import { ReactElement } from 'react';
+import React, { ReactElement } from 'react';
 import { Box, SimpleGrid, Icon, Text, Stack, Flex } from '@chakra-ui/react';
 import { FcAssistant, FcDonate, FcInTransit } from 'react-icons/fc';
 
-interface FeatureProps {
-  title: string;
-  text: string;
-  icon: ReactElement;
-}
 
-const Feature = ({ title, text, icon }: FeatureProps) => {
+const Feature = ({ title, text, icon }) => {
   return (
     <Stack>
       <Flex
@@ -28,7 +23,7 @@ const Feature = ({ title, text, icon }: FeatureProps) => {
   );
 };
 
-export default function SimpleThreeColumns() {
+export default function MoreDetails() {
   return (
     <Box p={4}>
       <SimpleGrid columns={{ base: 1, md: 3 }} spacing={10}>
