@@ -12,9 +12,8 @@ import {
 const WebsiteLogo = (props) =>{
   return (
     <Box {...props}>
-      <Text fontSize="lg" fontWeight="bold">
-        TRADEBULLS
-      </Text>
+      <img src={`${process.env.PUBLIC_URL}/logo.jpg`} fontSize="lg" fontWeight="bold" />
+        
     </Box>
   );
 }
@@ -24,7 +23,7 @@ const IconClose = () => (
        xmlns="http://www.w3.org/2000/svg">
     <title>Close</title>
     <path
-      fill="white"
+      fill="black"
       d="M9.00023 7.58599L13.9502 2.63599L15.3642 4.04999L10.4142 8.99999L15.3642 13.95L13.9502 15.364L9.00023 10.414L4.05023 15.364L2.63623 13.95L7.58623 8.99999L2.63623 4.04999L4.05023 2.63599L9.00023 7.58599Z"
     />
   </svg>
@@ -35,7 +34,7 @@ const IconHamburgger = () => (
     width="24px"
     viewBox="0 0 20 20"
     xmlns="http://www.w3.org/2000/svg"
-    fill="white"
+    fill="black"
   >
     <title>Menu</title>
     <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
@@ -53,8 +52,8 @@ const MenuToggle = ({ toggleEvent, isMobileView }) => {
 
 const NavItem = ({ children, isLast, to = "/", ...rest }) => {
   return (
-    <Link href={to}>
-      <Text display="block" {...rest}>
+    <Link href={to} >
+      <Text display="block" color={"green.900"} {...rest} >
         {children}
       </Text>
     </Link>
@@ -82,9 +81,9 @@ const NavLinks = ({ isMobileView }) => {
         pt={[4, 4, 0, 0]}
       >
         <NavItem to="/">Home</NavItem>
-        <NavItem to="/">About Us</NavItem>
-        <NavItem to="/">Services </NavItem>
-        <NavItem to="/">Developers </NavItem>
+        <NavItem to="/">About</NavItem>
+        <NavItem to="/">Transfer </NavItem>
+        
         <NavItem to="/">
             <Button
             size="sm"
@@ -131,7 +130,7 @@ const FlexContainer = ({ children, ...props }) => {
       w="100%"
       mb={8}
       p={8}
-      bg={["primary.300", "primary.300", "transparent", "transparent"]}
+      bg={["white", "white", "transparent", "transparent"]}
       color={["white", "white", "primary.700", "primary.700"]}
       {...props}
     >
