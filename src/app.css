@@ -28,3 +28,14 @@
   box-shadow: 0 5px 18px rgba(0, 0, 0, 0.15);
   transform: translateY(-2px);
 }
+
+
+/* I made these changes in nprogress.css */
+#nprogress .bar {
+  height: 3px;
+}
+#nprogress .spinner-icon {
+  width: 25px;
+  height: 25px;
+  border: solid 3px transparent;
+}
