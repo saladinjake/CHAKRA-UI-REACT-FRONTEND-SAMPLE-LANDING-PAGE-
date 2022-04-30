@@ -118,6 +118,8 @@ export default function Footer() {
           © 2022 Bullion Trade. All rights reserved
         </Text>
       </Box>
+       <a class="float-bar" href="#" target="_blank">👋 Visit My Website</a>
+          
     </Box>
   );
 }
