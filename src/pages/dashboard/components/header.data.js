@@ -1,27 +1,18 @@
 const data = [
   {
-  label:"hello "
+  label:"Investments"
   },
   {
-label:"hello "
+label:"Liquid Assets"
   },
   {
-label:"hello "
+label:"Forex"
   },
    {
-  label:"hello "
+  label:"Cryptocurrencies"
   },
   {
-label:"hello "
-  },
-  {
-label:"hello "
-  },
-  {
-label:"hello "
-  },
-  {
-label:"hello "
+label:"Wallets"
   }
 ]
 

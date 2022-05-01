@@ -1,5 +1,5 @@
 import React from "react";
-import { Drawer, DrawerBody, DrawerFooter, DrawerHeader, DrawerOverlay, DrawerContent,
+import { Drawer,Image, DrawerBody, DrawerFooter, DrawerHeader, DrawerOverlay, DrawerContent,
   DrawerCloseButton, Flex, Text
 } from "@chakra-ui/react";
 export default function DrawerExample({
@@ -26,7 +26,9 @@ export default function DrawerExample({
         <DrawerContent alignItems="center">
           <DrawerCloseButton alignSelf="end" mx={p} my={p} />
           <DrawerHeader my={p}>
-            <Text as="p"> {title} </Text>
+            {/*<Text as="p"> {title} </Text>*/}
+            <Image  src={`${process.env.PUBLIC_URL}/logo.jpg`} h="50px" />
+        
           </DrawerHeader>
           <DrawerBody>{children}</DrawerBody>
           <DrawerFooter>{footer}</DrawerFooter>

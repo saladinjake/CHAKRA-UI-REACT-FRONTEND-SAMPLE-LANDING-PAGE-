@@ -1,31 +1,79 @@
 import React from "react";
-import {Text,Link, useDisclosure, Flex, Box, Button,  VStack, Icon, HStack, Image, Link as ChakraLink } from "@chakra-ui/react";
+import {Text,Link,   Button,
+  Checkbox,
+ 
+  FormControl,
+  FormLabel,
+  Input,
+  Heading,
+  useDisclosure, Flex, Box,   VStack, Icon, HStack, Image, Link as ChakraLink } from "@chakra-ui/react";
 import Drawer from './Drawer';
 import {  IoMdMenu } from 'react-icons/io';
 
 import data from './header.data';
 
-
+import {
+  Home,
+  UserGroup,
+  Folder,
+  Calendar,
+  Inbox,
+  ChartSquareBar,
+  LogoMark,
+  LogoOnDark,
+  Template,
+  ClipboardList
+} from './icons';
 
 import MobileDrawer from "./MobileMenu"
-const CTA = "Get Started"
+const CTA = "Search"
+
+const IconWithLinksView = ({icon,href, children}) =>{
+  return (<Link href={href}>
+    <Flex align="left" width={140}>
+      <Box as={icon} ml={1} w={6} />
+      <Text fontSize="sm" fontWeight="medium" >
+        {children}
+      </Text>
+    </Flex>
+  </Link>)
+}
 export default function Header() {
   return (
     <>
       <Flex w="100%"   border='1px' borderColor='gray.200' display="flex" align="center"
         justify="space-between">
-        <HStack as="nav" spacing="5" display={{ base: "none", md: "flex" }} >
-           <Text>icon</Text>
-            <Text>icon</Text>
-             <Text>icon</Text>
-              <Text>icon</Text>
+        <HStack as="nav" spacing="5"   >
+           <IconWithLinksView href="/dashboard/reports" icon={ChartSquareBar} >
+              Stock Market
+          </IconWithLinksView>
+          <IconWithLinksView href="/dashboard/reports" icon={ChartSquareBar} >
+              Trading Tips
+          </IconWithLinksView>
+          <IconWithLinksView display={{ base: "none", md: "flex" }} href="/dashboard/reports" icon={ChartSquareBar}>
+              Trade News
+          </IconWithLinksView>
+          
+         
         </HStack>
 
 
         <HStack as="nav" spacing="5" display={{ base: "none", md: "flex" }} >
-           <Text>icon</Text>
-            <Text>icon</Text>
-             <Text>icon</Text>
+           <IconWithLinksView href="/dashboard/reports" icon={ChartSquareBar} >
+              Send Money
+          </IconWithLinksView>
+          <IconWithLinksView href="/dashboard/reports" icon={ChartSquareBar} >
+              Buy Coin
+          </IconWithLinksView>
+          <IconWithLinksView href="/dashboard/reports" icon={ChartSquareBar}>
+              Sell Coin
+          </IconWithLinksView>
+          <IconWithLinksView href="/dashboard/reports" icon={ChartSquareBar} >
+              Social Networks
+          </IconWithLinksView>
+          <IconWithLinksView href="/dashboard/reports" icon={ChartSquareBar} >
+              Reports
+          </IconWithLinksView>
         </HStack>
 
       </Flex>
@@ -40,8 +88,10 @@ export default function Header() {
         justify="space-between"
         border='1px' borderColor='gray.200'
       >
-        <Text>Hello</Text>
-        {/*<Image src={`${process.env.PUBLIC_URL}/logo.jpg`} h="50px" />*/}
+        
+
+
+        <Image display={{ base: "none", md: "block" }} src={`${process.env.PUBLIC_URL}/logo.jpg`} h="50px" />
         
         <HStack as="nav" spacing="5" display={{ base: "none", md: "flex" }} >
           {data.map((item, i) => (
@@ -50,6 +100,15 @@ export default function Header() {
             </Link>
           ))}
         </HStack>
+
+
+        <FormControl id="email" >
+        <Image display={{ base: "block", md:  "none" }} src={`${process.env.PUBLIC_URL}/logo.jpg`} h="50px" />
+        
+          
+            <Input placeholder='Find news content,blogs,coins,assets...' variant='flushed' />
+             
+          </FormControl>
 
         <HStack  >
           <Button>
@@ -64,35 +123,33 @@ export default function Header() {
 
        <Flex w="100%"   border='1px' borderColor='gray.200' display="flex" align="center"
         justify="space-between">
-        <HStack as="nav" spacing="5" display={{ base: "none", md: "flex" }} >
-            <Text>icon</Text>
-            <Text>icon</Text>
-            <Text>icon</Text>
-            <Text>icon</Text>
-            <Text>icon</Text>
-            <Text>icon</Text>
-            <Text>icon</Text>
-            <Text>icon</Text>
-            <Text>icon</Text>
-            <Text>icon</Text>
-            <Text>icon</Text>
-            <Text>icon</Text>
-            <Text>icon</Text>
-            <Text>icon</Text>
-            <Text>icon</Text>
+        <HStack as="nav" padding="10px" spacing="5" overflowX={{base:"scroll", md:"inherit"}} display={{ base: "flex", md: "flex" }} >
+            <IconWithLinksView href="/dashboard/reports" icon={ChartSquareBar} >
+              Reports
+          </IconWithLinksView>
+          <IconWithLinksView href="/dashboard/reports" icon={ChartSquareBar} >
+              Reports
+          </IconWithLinksView>
+          <IconWithLinksView href="/dashboard/reports" icon={ChartSquareBar}>
+              Reports
+          </IconWithLinksView>
+          <IconWithLinksView href="/dashboard/reports" icon={ChartSquareBar} >
+              Reports
+          </IconWithLinksView>
+          <IconWithLinksView href="/dashboard/reports" icon={ChartSquareBar} >
+              Reports
+          </IconWithLinksView>
         </HStack>
 
 
         <HStack as="nav" spacing="5" display={{ base: "none", md: "flex" }} >
-             <Text>icon</Text>
-             <Text>icon</Text>
-             <Text>icon</Text>
-             <Text>icon</Text>
-             <Text>icon</Text>
-             <Text>icon</Text>
-             <Text>icon</Text>
-             <Text>icon</Text>
-             <Text>icon</Text>
+          <IconWithLinksView href="/dashboard/reports" icon={ChartSquareBar} >
+              Reports
+          </IconWithLinksView>
+          <IconWithLinksView href="/dashboard/reports" icon={ChartSquareBar} >
+              Reports
+          </IconWithLinksView>
+          
         </HStack>
 
       </Flex>

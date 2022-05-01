@@ -1,8 +1,12 @@
 import React from "react"
-import SideBarNavigation  from "./components/SideBar"
+import TopBar  from "./components/TopBar"
+import SideBar from "./components/SideBar"
 const Dashboard = () => {
 	return (
-		<SideBarNavigation/>
+		<>
+		<TopBar/>
+		<SideBar/>
+		</>
 	)
 }
 
