@@ -1,15 +1,21 @@
 import React from "react";
 import {Text,Link,   Button,
   Checkbox,
- 
+   Menu,
+   MenuItem,
+   MenuButton,
+   MenuList,
+   MenuDivider,
   FormControl,
+  Avatar,
+  Center,
   FormLabel,
   Input,
   Heading,
   useDisclosure, Flex, Box,   VStack, Icon, HStack, Image, Link as ChakraLink } from "@chakra-ui/react";
 import Drawer from './Drawer';
 import {  IoMdMenu } from 'react-icons/io';
-
+import {CategoriesMenu } from "../mixins/mixins"
 import data from './header.data';
 
 import {
@@ -124,9 +130,7 @@ export default function Header() {
        <Flex w="100%"   border='1px' borderColor='gray.200' display="flex" align="center"
         justify="space-between">
         <HStack as="nav" padding="10px" spacing="5" overflowX={{base:"scroll", md:"inherit"}} display={{ base: "flex", md: "flex" }} >
-            <IconWithLinksView href="/dashboard/reports" icon={ChartSquareBar} >
-              Reports
-          </IconWithLinksView>
+           <CategoriesMenu/>
           <IconWithLinksView href="/dashboard/reports" icon={ChartSquareBar} >
               Reports
           </IconWithLinksView>
@@ -146,9 +150,30 @@ export default function Header() {
           <IconWithLinksView href="/dashboard/reports" icon={ChartSquareBar} >
               Reports
           </IconWithLinksView>
-          <IconWithLinksView href="/dashboard/reports" icon={ChartSquareBar} >
-              Reports
-          </IconWithLinksView>
+           <Menu>
+                <MenuButton
+                  as={Button}
+                  rounded={'full'}
+                  variant={'link'}
+                  cursor={'pointer'}
+                  minW={0}>
+                  <Avatar
+                    size={'sm'}
+                    src={''}
+                  />
+                </MenuButton>
+                <MenuList alignItems={'center'}>
+                  
+                  <Center>
+                    <p>Saladin Jake</p>
+                  </Center>
+                  <br />
+                  <MenuDivider />
+                  <MenuItem>Your Servers</MenuItem>
+                  <MenuItem>Account Settings</MenuItem>
+                  <MenuItem>Logout</MenuItem>
+                </MenuList>
+              </Menu>
           
         </HStack>
 
