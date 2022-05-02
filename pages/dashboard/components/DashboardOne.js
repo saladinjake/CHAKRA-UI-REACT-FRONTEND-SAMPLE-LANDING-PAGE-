@@ -492,7 +492,7 @@ function Navigations({toggle}) {
 
 
 
-const SideBar = ( props) => {
+const Layout = ( props) => {
 	const [toggle, setToggle] = useState(false)
 
 	const handleSwitch = () => setToggle(!toggle)
@@ -534,6 +534,9 @@ const SideBar = ( props) => {
   <GridItem colSpan={2} border='1px' borderColor='gray.200' />
   <GridItem colSpan={4} border='1px' borderColor='gray.200' />
 </Grid>
+
+
+
 </>
 
 
@@ -542,4 +545,4 @@ const SideBar = ( props) => {
 	)
 }
 
-export default SideBar
+export default Layout
