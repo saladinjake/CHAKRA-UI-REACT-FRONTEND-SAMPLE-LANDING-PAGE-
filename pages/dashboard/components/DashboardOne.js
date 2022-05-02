@@ -25,7 +25,7 @@ import {
   LogoOnDark,
   Template,
   ClipboardList
-} from './icons';
+} from './icons/heroicons';
 
 
 

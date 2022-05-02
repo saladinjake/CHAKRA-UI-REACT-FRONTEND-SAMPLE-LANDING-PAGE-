@@ -12,7 +12,7 @@ import {
 const WebsiteLogo = (props) =>{
   return (
     <Box {...props}>
-      <img src={`${process.env.PUBLIC_URL}/logo.jpg`} fontSize="lg" fontWeight="bold" />
+      <img src={`${process.env.PUBLIC_PATH}/logo.jpg`} fontSize="lg" fontWeight="bold" />
         
     </Box>
   );

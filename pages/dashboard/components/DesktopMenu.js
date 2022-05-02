@@ -37,7 +37,7 @@ import {
   LogoOnDark,
   Template,
   ClipboardList
-} from './icons';
+} from './icons/heroicons';
 
 import {
   HamburgerIcon,
@@ -60,7 +60,7 @@ const IconWithLinksView = ({icon,href, children}) =>{
   </Link>)
 }
 
-const DesktopSubNav = ({ label, href, subLabel }: NavItem) => {
+const DesktopSubNav = ({ label, href, subLabel }) => {
   return (
     <Link
       href={href}

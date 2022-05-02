@@ -3,7 +3,6 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "predev": "([[ -d .vercel ]] || vercel link) && vercel env pull .env.local",
     "dev": "next dev",
     "build": "next build",
     "start": "next start"

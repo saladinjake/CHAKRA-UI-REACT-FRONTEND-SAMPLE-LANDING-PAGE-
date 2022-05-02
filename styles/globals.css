@@ -22,3 +22,67 @@ a {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+
+
+
+
+
+/*--WORKS BEST IN FULL SCREEN!!!--*/
+*,
+*:before,
+*:after {
+  /*cursor made by gafcodes.com*/
+  cursor: url(https://www.gafcodes.com/premade/cursors/jspunkette/cursor8.cur),
+    default;
+  outline: none;
+}
+
+
+.float-bar{
+  position: absolute;
+  bottom: 0px;
+  right: 0;
+  padding: 8px 20px;
+  font-weight: bold;
+  color: #1B2B32;
+  text-decoration: none;
+  background: #fff;
+  margin: 30px 20px;
+  border-radius: 20px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.25);
+  transition: all 150ms ease-in-out;
+  
+}
+.float-bar:hover{
+  box-shadow: 0 5px 18px rgba(0, 0, 0, 0.15);
+  transform: translateY(-2px);
+}
+
+
+/* I made these changes in nprogress.css */
+#nprogress .bar {
+  height: 3px;
+}
+#nprogress .spinner-icon {
+  width: 25px;
+  height: 25px;
+  border: solid 3px transparent;
+}
+
+
+body::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar {
+  width: 3px;
+}
+ 
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+ 
+::-webkit-scrollbar-thumb {
+  background-color: #f6f6f6;
+  outline: 1px solid slategrey;
+}
