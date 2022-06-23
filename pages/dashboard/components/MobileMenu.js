@@ -1,9 +1,90 @@
 import {Link, useDisclosure, Flex, Box, Button,  VStack, Icon, HStack, Link as ChakraLink } from "@chakra-ui/react";
 import Drawer from './Drawer';
 import {  IoMdMenu } from 'react-icons/io';
-
-import data from '../../../header.data';
 import React from "react";
+
+const data = [
+  {
+    label: 'Inspiration',
+    children: [
+      {
+        label: 'Link Here',
+        subLabel: 'Sub Link',
+        href: '#',
+      },
+      {
+        label: 'Link Here',
+        subLabel: 'Sub Link',
+        href: '#',
+      },
+    ],
+  },
+  {
+    label: 'Link Name',
+    children: [
+      {
+        label: 'Link Here',
+        subLabel: 'Sub Link',
+        href: '#',
+      },
+      {
+        label: 'information link',
+        subLabel: 'sub introductory',
+        href: '#',
+      },
+    ],
+  },
+
+  {
+    label: 'Link Name',
+    children: [
+      {
+        label: 'Link Here',
+        subLabel: 'Sub Link',
+        href: '#',
+      },
+      {
+        label: 'information link',
+        subLabel: 'sub introductory',
+        href: '#',
+      },
+    ],
+  },
+
+  {
+    label: 'Link Name',
+    children: [
+      {
+        label: 'Link Here',
+        subLabel: 'Sub Link',
+        href: '#',
+      },
+      {
+        label: 'information link',
+        subLabel: 'sub introductory',
+        href: '#',
+      },
+    ],
+  },
+
+  {
+    label: 'Link Name',
+    children: [
+      {
+        label: 'Link Here',
+        subLabel: 'Sub Link',
+        href: '#',
+      },
+      {
+        label: 'information link',
+        subLabel: 'sub introductory',
+        href: '#',
+      },
+    ],
+  },
+  
+];
+
 export default function MobileDrawer() {
     const { isOpen, onOpen, onClose } = useDisclosure();
     const btnRef = React.useRef();
