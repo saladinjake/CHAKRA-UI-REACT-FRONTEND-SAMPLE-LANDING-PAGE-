@@ -2,7 +2,7 @@ import {Link, useDisclosure, Flex, Box, Button,  VStack, Icon, HStack, Link as C
 import Drawer from './Drawer';
 import {  IoMdMenu } from 'react-icons/io';
 
-import data from './header.data';
+import data from '../../../header.data';
 import React from "react";
 export default function MobileDrawer() {
     const { isOpen, onOpen, onClose } = useDisclosure();
