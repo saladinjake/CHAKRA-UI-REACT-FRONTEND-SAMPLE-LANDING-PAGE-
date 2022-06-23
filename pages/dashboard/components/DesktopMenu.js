@@ -23,7 +23,7 @@ import {Text,Link,   Button,
 import Drawer from './Drawer';
 import {  IoMdMenu } from 'react-icons/io';
 import {CategoriesMenu } from "../mixins/mixins"
-import data from './header.data';
+import data from '../../../header.data';
 import BaseNav from "./BaseNavigation"
 
 import {
